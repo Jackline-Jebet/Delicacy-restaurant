@@ -1,53 +1,169 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import BackImage1 from "../images/img9.jpeg";
-import BackImage2 from "../images/img17.jpg";
-import BackImage3 from "../images/img35.jpeg";
-import BackImage4 from "../images/img6.jpeg";
-import BackImage5 from "../images/img1.png";
-import BackImage6 from "../images/img18.jpeg";
-import BackImage7 from "../images/img20.png";
-import BackImage8 from "../images/img26.jpeg";
-import BackImage9 from "../images/img40.avif";
-import containerImage from "../images/image1 bg.png";
-import "../styles/Home.css"
+import React from 'react';
+import '../styles/Home.css';
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
+import LocalDiningIcon from '@mui/icons-material/LocalDining';
+import CardMembershipIcon from '@mui/icons-material/CardMembership';
+import BackImage3 from "../images/img222.png";
+import BackImage2 from "../images/img6.jpeg";
+
+
+
 
 function Home() {
-  const images = [BackImage1, BackImage2, BackImage3, BackImage4, BackImage5, BackImage6, BackImage7, BackImage8, BackImage9];
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalid = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-    return () => clearInterval(intervalid)
-  }, [images.length]);
 
   return (
     <div className='home'>
-      <div className='backgroundImg' style={{ backgroundImage: `url(${images[currentImageIndex]})`, transition: 'background-image 2s ease-in-out' }}></div>
 
-      <div className='container'>
-      <img className='img' src={containerImage} alt='Delicious Food' />
-      <h3> Hello, Welcome. Are You Ready For Our Delicious Taste?</h3>
-      <h1>DELICACY RESTAURANT</h1>
-      <Link to="/#">
-          <button className='btnHome1'>Welcome Aboard</button>
-          <button className='btnHome2'>Discover Menu</button>
-      </Link>
-      </div>
-      
-      <div className='top-form'>
+    <div className='top-form'>
         <form>
           <input type='text' placeholder='NAME' />
           <input type='email' placeholder='EMAIL' />
           <input type='text' placeholder='MESSAGE' />
           <button type='submit'>CONTACT US</button>
         </form>
-        
       </div>
+
+      <section className='container-two'>
+        <div className='services'>
+          < MonetizationOnIcon />
+          <h3>REASONABLE COSTS</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, 
+            adipiscing nec, ultricies sed, dolor.consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, 
+            adipiscing nec, ultricies sed, dolor.</p>
+        </div>
+
+     
+        <div className='services'>
+          < LocalDiningIcon />
+          <h3>DELICIOUS CUISINE</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
+             adipiscing nec, ultricies sed, dolor.consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, 
+             adipiscing nec, ultricies sed, dolor.</p>
+        </div>
+
+        
+        <div className='services'>
+          < CardMembershipIcon />
+          <h3>HIGH-END SERVICES</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,
+             adipiscing nec, ultricies sed, dolor.consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, 
+             adipiscing nec, ultricies sed, dolor.</p>
+        </div>
+      </section>
+
+      <section>
+        <div className='container3'>
+          <div className='left-side'>
+            <h1><span>Join Us</span> for a Relaxing Meal.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+               dignissim sit amet, adipiscing nec, ultricies sed, dolor.consectetur adipiscing elit. Sed non risus. 
+               Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. consectetur adipiscing elit. 
+               Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.consectetur adipiscing elit.
+                Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+
+          </div>
+
+          <div className='right-side'>
+          <img className='img2' src={BackImage2} alt='Delicious Food' />
+          <img className='img' src={BackImage3} alt='Delicious Food' />
+          </div>
+        </div>
+      </section>
+
+      <section className='container-4'>
+        <div className='sample-menu'>
+          <h1>OUR SAMPLE MENU</h1>
+          <div className='icon-container'>
+            < LocalDiningIcon />
+          </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+               dignissim sit amet, adipiscing nec, ultricies sed, dolor.consectetur adipiscing elit. Sed non risus. 
+               Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. consectetur adipiscing elit. 
+               Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
+            </p>
+            </div>
+        <div className='menu-container'>
+
+        <div className='menu-item'>
+          <img className='img' src={BackImage3} alt='Delicious Food' />
+          <div className='menu-details'>
+            <h3>Item Name1</h3>
+            <p className='price'>Ksh 350</p>
+           </div>
+          </div>
+
+          <div className='menu-item'>
+          <img className='img' src={BackImage3} alt='Delicious Food' />
+          <div className='menu-details'>
+            <h3>Item Name2</h3>
+            <p className='price'>Ksh 450</p>
+           </div>
+          </div>
+          <div className='menu-item'>
+          <img className='img' src={BackImage3} alt='Delicious Food' />
+          <div className='menu-details'>
+            <h3>Item Name3</h3>
+            <p className='price'>Ksh 550</p>
+           </div>
+          </div>
+          <div className='menu-item'>
+          <img className='img' src={BackImage3} alt='Delicious Food' />
+          <div className='menu-details'>
+            <h3>Item Name4</h3>
+            <p className='price'>Ksh 650</p>
+           </div>
+          </div>
+          <div className='menu-item'>
+          <img className='img' src={BackImage3} alt='Delicious Food' />
+          <div className='menu-details'>
+            <h3>Item Name5</h3>
+            <p className='price'>Ksh 250</p>
+           </div>
+          </div>
+
+          <div className='menu-item'>
+          <img className='img' src={BackImage3} alt='Delicious Food' />
+          <div className='menu-details'>
+            <h3>Item Name6</h3>
+            <p className='price'>Ksh 150</p>
+           </div>
+          </div>
+
+          <div className='menu-item'>
+          <img className='img' src={BackImage3} alt='Delicious Food' />
+          <div className='menu-details'>
+            <h3>Item Name7</h3>
+            <p className='price'>Ksh 750</p>
+           </div>
+          </div>
+
+          <div className='menu-item'>
+          <img className='img' src={BackImage3} alt='Delicious Food' />
+          <div className='menu-details'>
+            <h3>Item Name8</h3>
+            <p className='price'>Ksh 350</p>
+           </div>
+          </div>
+
+          <div className='menu-item'>
+          <img className='img' src={BackImage3} alt='Delicious Food' />
+          <div className='menu-details'>
+            <h3>Item Name9</h3>
+            <p className='price'>Ksh 950</p>
+           </div>
+          </div>
+
+        </div>
+        
+        <div className='menu-btn'>
+        <button>DISCOVER SHOP</button>
+        </div>
+      </section>
+
+      
+
     </div>
   )
 }
 
-export default Home
+export default Home;

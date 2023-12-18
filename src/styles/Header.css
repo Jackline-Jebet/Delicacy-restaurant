@@ -31,6 +31,10 @@
   color: white;
 }
 
+.header.scrolled nav a:hover {
+  color: rgb(47, 192, 168);
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -64,7 +68,8 @@ nav a {
 }
 
 nav a:hover {
-  color: chocolate;
+  /* color: chocolate; */
+  color: rgb(17, 235, 206);
   text-decoration-line: overline;
 }
 

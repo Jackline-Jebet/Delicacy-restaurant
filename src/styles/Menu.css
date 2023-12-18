@@ -1,0 +1,155 @@
+.menu {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  margin-top: 190px;
+  /* align-items: baseline; */
+}
+
+.menu-left {
+  display: flex;
+  flex-direction: column;
+  flex: 0.27;
+  margin-top: 60px;
+  margin-left: 50px;
+  /* background: blue; */
+  padding-left: 10px;
+}
+.menu-left h2 {
+  position: relative;
+  color: rgb(95, 90, 87);;
+  font-size: 17px;
+  /* margin: 0; */
+  /* text-align: center; */
+  /* padding: 0 10px; */
+}
+
+.menu-left h2::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 3px;
+  width: 20%;
+  background-color: rgb(214, 212, 212);
+}
+
+.menu-left h2::after {
+   right: 45px;
+}
+
+.menu-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 0.74;
+  margin-top: 90px;
+  /* background: purple; */
+  align-items: center;
+}
+
+.cart-icon {
+  position: relative;
+  margin-top: 80px;
+}
+
+.cart-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.total-items {
+  /* background-color: orangered; */
+  background-color: rgb(17, 235, 162);;
+  color: white;
+  border-radius: 50%;
+  padding: 0px 4px;
+  margin-left: -0.4em;
+  margin-top: -30px;
+  font-size: 14px;
+}
+
+.top-rated-products img {
+  width: 100%;
+  max-width: 85px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.top-rated-products {
+  margin-top: 20px;
+}
+
+.top-rated-products ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-rated-products li {
+  width: 150px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(187, 184, 184);
+  width: 70%;
+  padding-bottom: 7px;
+
+}
+
+.top-rated-products p {
+  text-align: center;
+  margin-left: 22px;
+  line-height: 0.1;
+  letter-spacing: 0.8px;
+  margin-top: 25px;
+ 
+}
+
+.top-rated-products .label1 {
+  color: rgb(8, 192, 131);
+  font-weight: 550;
+  
+}
+
+.top-rated-products .label {
+  color: rgb(37, 36, 36);
+  font-weight: 550;
+}
+
+.selected-category {
+  position: relative;
+}
+
+.selected-category img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.product-tags {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag-box button {
+  margin-right: 20px;
+  width: 82px;
+  color: rgb(107, 107, 107);
+  letter-spacing: 0.5px;
+  padding: 2px;
+}
+
+.tag-box button:hover {
+  background: orangered;
+  color: white;
+  border: none;
+}
+

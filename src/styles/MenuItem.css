@@ -1,0 +1,53 @@
+.menu-item {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
+}
+
+.menu-item img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.menu-item p {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.cart-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #d4321c; */
+  background-color: white;
+  color: rgb(41, 16, 2);
+  font-weight: 550;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: none; /* initially hide the button */
+  width: 130px;
+}
+
+.menu-item:hover .cart-button {
+  display: block;
+}
+
+.cart-button:hover {
+  color: rgb(17, 235, 162);;
+}
+
+.menu-item .label {
+  color: rgb(37, 36, 36);
+}
+
+.menu-item .label1 {
+  color: rgb(9, 182, 101);
+  color: rgb(17, 235, 162);
+  margin-top: -12px;
+}

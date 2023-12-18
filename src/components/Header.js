@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Logo from "../images/logo rm bg.png";
 import { Link } from 'react-router-dom';
 import "../styles/Header.css";
-// import ReorderIcon from '@mui/icons-material/Reorder';
+import ReorderIcon from '@mui/icons-material/Reorder';
 
 
 function Header() {
   const [openLinks, setOpenLinks] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  
   const toggleHeader = () => {
     setOpenLinks(!openLinks);
   }
@@ -19,9 +19,9 @@ function Header() {
     } else {
       setScrolled(false);
     }
-  }
+  };
 
-  useEffect(() => {
+     useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -45,11 +45,11 @@ function Header() {
           <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
-        <button onClick={toggleHeader}>
-          {/* <ReorderIcon /> */}
-        </button>
       </header>
     </div>
+    <button onClick={toggleHeader}>
+          <ReorderIcon />
+        </button>
   </div> 
   )
 }
