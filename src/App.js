@@ -13,6 +13,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Layout from './components/Layout';
 import HomeTop from './components/HomeTop';
+import ContactLayout from './components/ContactLayaout';
 
 function App() {
  
@@ -26,7 +27,7 @@ function App() {
           <Route path='/menu' element={<Layout><Menu /></Layout>} />
           <Route path='/Hometop' element={<Layout><HomeTop /></Layout>} />
           <Route path='/about' element={<Layout><About /></Layout>} />
-          <Route path='/contact' element={<Contact/>} />
+          <Route path='/contact' element={<ContactLayout><Contact /></ContactLayout>} />
           <Route path="/terms" element={<TermsConditions />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>

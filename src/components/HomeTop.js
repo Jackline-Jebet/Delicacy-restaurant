@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import BackImage1 from "../images/img9.jpeg";
 import BackImage2 from "../images/img17.jpg";
 import BackImage3 from "../images/img35.jpeg";
-import BackImage4 from "../images/img6.jpeg";
-import BackImage5 from "../images/img1.png";
-import BackImage6 from "../images/img18.jpeg";
-import BackImage7 from "../images/img20.png";
+import BackImage4 from "../images/new13.jpg";
+import BackImage5 from "../images/new4.jpg";
+import BackImage6 from "../images/new5.jpg";
+import BackImage7 from "../images/new16.jpg";
 import BackImage8 from "../images/img26.jpeg";
-import BackImage9 from "../images/img40.avif";
+import BackImage9 from "../images/new9.jpg";
 import containerImage from "../images/image1 bg.png";
 import "../styles/HomeTop.css"
 

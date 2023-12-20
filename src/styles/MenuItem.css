@@ -39,7 +39,7 @@
 }
 
 .cart-button:hover {
-  color: rgb(17, 235, 162);;
+  color: #fff;
 }
 
 .menu-item .label {
@@ -48,6 +48,6 @@
 
 .menu-item .label1 {
   color: rgb(9, 182, 101);
-  color: rgb(17, 235, 162);
+  /* color: rgb(17, 235, 162); */
   margin-top: -12px;
 }
