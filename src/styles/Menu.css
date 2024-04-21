@@ -1,28 +1,44 @@
 .menu {
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
   flex-wrap: wrap;
-  margin-top: 190px;
-  /* align-items: baseline; */
+  margin-top: 100px;
+}
+
+.menu .container svg {
+  color: orangered;
+}
+
+.menu .container span {
+  color: rgb(0, 255, 191);
+}
+
+.menu .container h1 {
+  color: rgb(19, 7, 1);
+}
+
+.menu .feature-title::before,
+.menu .feature-title::after {
+border-bottom-color:  rgb(0, 255, 191);
+}
+
+.menu .feature-title p span {
+  /* color: orangered; */
+  text-shadow: 2px 2px 4px rgba(8, 8, 8, 0.973);
 }
 
 .menu-left {
   display: flex;
   flex-direction: column;
   flex: 0.27;
-  margin-top: 60px;
+  margin-top: -60px;
   margin-left: 50px;
-  /* background: blue; */
   padding-left: 10px;
 }
 .menu-left h2 {
   position: relative;
   color: rgb(95, 90, 87);;
   font-size: 17px;
-  /* margin: 0; */
-  /* text-align: center; */
-  /* padding: 0 10px; */
 }
 
 .menu-left h2::after {
@@ -44,8 +60,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   flex: 0.74;
-  margin-top: 90px;
-  /* background: purple; */
+  margin-top: -40px;
   align-items: center;
 }
 
@@ -63,8 +78,7 @@
 }
 
 .total-items {
-  /* background-color: orangered; */
-  background-color: rgb(17, 235, 162);;
+  background-color:  rgb(10, 231, 158);
   color: white;
   border-radius: 50%;
   padding: 0px 4px;
@@ -74,10 +88,10 @@
 }
 
 .top-rated-products img {
-  width: 100%;
-  max-width: 85px;
+  width: 95px;
+  /* max-width: 85px; */
   height: 80px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .top-rated-products {
@@ -114,7 +128,7 @@
 }
 
 .top-rated-products .label1 {
-  color: rgb(8, 192, 131);
+  color:  rgb(10, 231, 158);
   font-weight: 550;
   
 }

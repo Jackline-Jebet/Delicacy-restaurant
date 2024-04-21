@@ -3,22 +3,36 @@ import MenuItem from '../components/MenuItem';
 import Cart from '../components/Cart';
 import '../styles/Menu.css';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import BackImage3 from "../images/img35.jpeg";
-import BackImage4 from "../images/img35.jpeg";
+import BackImage3 from "../images/beanstew.webp";
+import BackImage4 from "../images/beef stew.jpg";
+import BackImage5 from "../images/beef fried chicken.jpeg";
+import BackImage7 from "../images/chicken biryani.jpg";
+import BackImage8 from "../images/black-eyed-pea-recipe-1.jpg";
+import BackImage10 from "../images/pasta.jpg";
+import BackImage11 from "../images/img31-.png";
+import BackImage12 from "../images/Nyama Choma.jpg";
+import BackImage13 from "../images/img33.jpg";
+import BackImage14 from "../images/pasta1.jpg";
+import BackImage15 from "../images/Nyama Choma.jpg";
+import BackImage16 from "../images/new9.jpg";
+import BackImage17 from "../images/mushrooms.jpg";
+import BackImage18 from "../images/Matoke(plantain banana stew).jpg";
+import BackImage19 from "../images/img32.jpeg";
 import BackImage6 from "../images/img10.jpeg";
-
+import BackImage9 from "../images/new1.jpg";
+import SettingsInputAntennaIcon from '@mui/icons-material/SettingsInputAntenna';
 
 function Menu() {
   const menuItems = [
-    { image: BackImage3, label: 'Menu Item 1', label1: 'Ksh300.00' },
-    { image: BackImage4, label: 'Menu Item 2', label1: 'Ksh270.00' },
-    { image: BackImage3, label: 'Menu Item 3', label1: 'Ksh480.00' },
-    { image: BackImage4, label: 'Menu Item 4', label1: 'Ksh160.00' },
-    { image: BackImage3, label: 'Menu Item 5', label1: 'Ksh270.00' },
-    { image: BackImage4, label: 'Menu Item 6', label1: 'Ksh250.00' },
-    { image: BackImage3, label: 'Menu Item 7', label1: 'Ksh350.00' },
-    { image: BackImage3, label: 'Menu Item 5', label1: 'Ksh270.00' },
-    { image: BackImage4, label: 'Menu Item 6', label1: 'Ksh250.00' },
+    { image: BackImage3, label: 'Bean Stew Chapati', label1: 'Ksh300.00' },
+    { image: BackImage4, label: 'Beef Stew', label1: 'Ksh270.00' },
+    { image: BackImage5, label: 'Rice Fried Chicken', label1: 'Ksh480.00' },
+    { image: BackImage7, label: 'Chicken Biryani', label1: 'Ksh160.00' },
+    { image: BackImage8, label: 'Black-Eyed Pea Recipe', label1: 'Ksh270.00' },
+    { image: BackImage10, label: 'Pasta', label1: 'Ksh250.00' },
+    { image: BackImage11, label: 'Mushroom Special', label1: 'Ksh350.00' },
+    { image: BackImage12, label: 'Nyama Choma(Roasted Meat)', label1: 'Ksh270.00' },
+    { image: BackImage13, label: 'Rice Special', label1: 'Ksh250.00' },
     // { image: BackImage3, label: 'Menu Item 7', label1: 'Ksh350.00' },
   ];
 
@@ -71,19 +85,18 @@ function Menu() {
   ], []);
 
   const topRatedProducts = [
-    { id: 'product1', label: 'Product 1', label1: 'Ksh850.00', image: BackImage3 },
-    { id: 'product2', label: 'Product 2', label1: 'Ksh750.00', image: BackImage3 },
-    { id: 'product3', label: 'Product 3', label1: 'Ksh150.00', image: BackImage3 },
-    { id: 'product4', label: 'Product 4', label1: 'Ksh250.00', image: BackImage3 },
-    { id: 'product5', label: 'Product 5', label1: 'Ksh150.00', image: BackImage3 },
-    { id: 'product6', label: 'Product 6', label1: 'Ksh300.00', image: BackImage3 },
+    { id: 'product1', label: 'Pasta Curry', label1: 'Ksh850.00', image: BackImage14 },
+    { id: 'product2', label: 'Nyama Choma', label1: 'Ksh750.00', image: BackImage15 },
+    { id: 'product3', label: 'Fruity Recipe', label1: 'Ksh150.00', image: BackImage16 },
+    { id: 'product4', label: 'Mushrooms', label1: 'Ksh250.00', image: BackImage17 },
+    { id: 'product5', label: 'Plantain Stew', label1: 'Ksh150.00', image: BackImage18 },
+    { id: 'product6', label: 'Fried Shrimps', label1: 'Ksh300.00', image: BackImage19 },
   ];
 
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [totalItems, setTotalItems] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  // const [selectedCategoryItems, setSelectedCategoryItems] = useState([]);
 
   const addToCart = (item) => {
     setCartItems([...cartItems, item]);
@@ -112,10 +125,6 @@ function Menu() {
     setSelectedCategory(categoryId === selectedCategory ? null : categoryId);
   };
 
-  // useEffect(() => {
-    // setSelectedCategoryItems([]);
-  // }, [selectedCategory]);
-
   const selectedCategoryItems = useMemo(() => {
     const category = productCategories.find((cat) => cat.id === selectedCategory);
     return category ? category.items : [];
@@ -123,7 +132,18 @@ function Menu() {
 
   return (
     <div className='menu'>
-   
+
+<div className='backgroundImg' style={{backgroundImage: `url(${BackImage9})`}}>
+      </div>
+
+      <div className='container'>
+        < SettingsInputAntennaIcon />
+        <h1><span>O</span>UR <span>D</span>ELICACY <span>M</span>ENU</h1>
+        <div className='feature-title'>
+      <p><span>We are simple yet magnificent</span></p>
+      </div>
+      </div>
+      
       <div className='menu-left'>
         <div className='product-categories'>
           <h2>PRODUCT CATEGORIES</h2>

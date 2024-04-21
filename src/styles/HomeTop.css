@@ -34,7 +34,9 @@
 }
 .container h3 {
   font-size: 30px;
+  /* color: rgb(19, 7, 1); */
   color: rgb(255, 30, 0);
+  /* color: orangered; */
   text-decoration-line: underline;
   margin-bottom: 4px;
   background-color: #fff;
@@ -46,6 +48,7 @@
 .container h1 {
   font-size: 64px;
   margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .container button {

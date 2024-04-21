@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Logo from "../images/logo rm bg.png";
+import Logo from "../images/lgg2-removebg-preview.png";
 import { Link } from 'react-router-dom';
 import "../styles/Header.css";
 import ReorderIcon from '@mui/icons-material/Reorder';

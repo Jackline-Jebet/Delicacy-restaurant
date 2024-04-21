@@ -4,32 +4,12 @@ import  FacebookIcon  from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTiktok } from '@fortawesome/free-brands-svg-icons';
-// import { Link } from 'react-router-dom';
 import  WhatsAppIcon  from '@mui/icons-material/WhatsApp';
-// import BackImage1 from "../images/img9.jpeg";
-// import BackImage2 from "../images/img17.jpg";
 import BackImage3 from "../images/new5.jpg";
-// import BackImage4 from "../images/img6.jpeg";
-// import BackImage5 from "../images/img1.png";
-// import BackImage6 from "../images/img18.jpeg";
-// import BackImage7 from "../images/img20.png";
-// import BackImage8 from "../images/img26.jpeg";
-// import BackImage9 from "../images/img40.avif";
 import containerImage from "../images/image1 bg.png";
 import '../styles/Contact.css';
 
 function Contact() {
-
-  // const images = [BackImage1, BackImage2, BackImage3, BackImage4, BackImage5, BackImage6, BackImage7, BackImage8, BackImage9];
-  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  // useEffect(() => {
-  //   const intervalid = setInterval(() => {
-  //     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  //   }, 3000);
-
-  //   return () => clearInterval(intervalid)
-  // }, [images.length]);
 
   return (
     <div className='contact'>
@@ -37,7 +17,7 @@ function Contact() {
 
      <div className='container'>
      <img className='img' src={containerImage} alt='Delicious Food' />
-     <h1>CONTACT</h1>
+     <h1><span>O</span>UR <span>C</span>ONTACT</h1>
      <div className='featured-title'>
       <p>We are simple yet magnificent</p>
       </div>

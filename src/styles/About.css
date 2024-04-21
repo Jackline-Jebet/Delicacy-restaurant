@@ -2,7 +2,252 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  margin-bottom: 260px;
+}
+
+.container h1 {
+  color: white;
+}
+
+.container h1 span {
+  color: orangered;
+}
+
+.about .backgroundImg {
+  opacity: 138%;
+
+}
+
+.container svg {
+  color: rgb(0, 255, 200);
+  width: 250px;
+  height: 130px;
+  margin-bottom: -15px;
+  
+}
+
+.feature-title  span {
+  font-size: 26px;
+  color: rgb(0, 255, 200);
+  color: orangered;
+  font-weight: 550;
+  margin-left: 8px;
+  margin-right: 8px;
+  text-shadow: 2px 2px 4px rgb(12, 12, 12);
+}
+
+.feature-title {
+  display: flex;
+}
+
+.feature-title::before,
+.feature-title::after {
+  display: table-cell;
+  content: "";
+  width: 100px;
+  height: 3px;
+  border-top: 1px solid orangered;
+  border-bottom: 2px solid rgb(35, 248, 248);
+  margin-top: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 43vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+.about-container p {
+ font-size: 19px;
+ margin-top: -8px;
+ color: rgba(19, 7, 1, 0.623);
+ 
+}
+
+.about-container h2 {
+  font-size: 30px;
+  color: rgb(24, 9, 1);
+}
+
+.about-container h2 span {
+  color: orangered;
+}
+
+.about .container9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.lft-side {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  flex: 0.6;
+  margin-right: 130px;
+  background-color: rgba(231, 252, 252, 0.466);
+  border-radius: 10px;
 }
+
+.lft-side p {
+  color: rgba(19, 7, 1, 0.582);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.lft-side h1 {
+  font-size: 37.2px;
+  margin-bottom: 0;
+  color: rgb(19, 7, 1);
+}
+
+.about .container8 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.about .left-side {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex: 0.6;
+background-color: rgba(231, 252, 252, 0.466);
+border-radius: 10px;
+/* margin-bottom: -120px; */
+}
+
+.about .left-side p {
+  color: rgba(19, 7, 1, 0.705);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.about .left-side h1 {
+  font-size: 37.2px;
+  margin-bottom: 0;
+  color: rgb(19, 7, 1);
+}
+
+.lft-side span {
+  color: rgb(10, 231, 158);
+}
+
+.about .right-side img {
+  width: 350px;
+  max-height: 450px;
+  border-radius: 15px;
+}
+
+.about .right-side .img1 {
+  width: 400px;
+  max-height: 450px;
+  border-radius: 15px;
+  object-fit: contain;
+  margin-top: -200px;
+}
+
+.about .right-side .img2 {
+ margin-top: 30px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.about .container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-container {
+  max-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.about .container4 h1 {
+  font-size: 30px;
+  color: rgb(19, 7, 1);
+}
+
+.team-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 0.3s; 
+}
+
+.team-item:hover::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  backdrop-filter: blur(10px);
+  opacity: 0.3;
+  ;
+}
+
+/* .team-item:hover::before {
+  opacity: 0.5;
+} */
+
+.team-details {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  align-items: center;
+  margin-top: 0px;
+  border: 2px solid black;
+  width: 276px;
+  background-color: #1b1b1b;
+  backdrop-filter: blur(10px);
+  opacity: 10;
+  border-top: none;
+
+}
+
+.team-item .img {
+  width: 280px;
+  height: 210px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.team-details h3 {
+  margin-bottom: -12px;
+  color: rgb(19, 7, 1);
+  color: #fff;
+  margin-top: 8px;
+}
+
+.team-details p {
+  color: rgb(12, 235, 197);
+}
+
+

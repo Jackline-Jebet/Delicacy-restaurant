@@ -53,13 +53,18 @@ nav a {
   font-family: lato;
   box-sizing: border-box;
   text-decoration: none;
-  color:  rgb(41, 16, 2);
+  /* color:  rgb(41, 16, 2); */
+  color: aqua;
+  color: rgb(190, 77, 36);
+  color: #fff;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 19px;
   padding: 2px 8px;
   letter-spacing: 1px;
   line-height: 84px;
-  /* outline-color: rgb(255, 255, 255); */
+  /* outline-color: 2px solid rgb(199, 8, 8); */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
   /* text-align: left; */
   /* text-rendering: optimizeLegibility; */
   /* vertical-align: baseline; */

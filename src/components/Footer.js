@@ -71,15 +71,15 @@ function Footer() {
             <p className='para1'>We are located in Nairobi-Kenya</p>
             <p className='para1'>Need Our Help to Order?</p>
             <p className='para1'>Got Questions ? Call us 24/7</p>
-            <p>Call Us: +254 011 888 199</p>
+            <p><span>Call Us:</span> +254 011 888 199</p>
             <p className='para1'>or</p>
-            <p>Email Us: delicacyrestaurant@gmail.com</p>
+            <p><span>Email Us:</span> delicacyrestaurant@gmail.com</p>
           </div>
         </div>
 
         <div className='copyright-txt'>
          <p>&copy; COPYRIGHT 2023 <span>DELICACY RESTAURANT.</span> All rights reserved</p>
-             <p><span>Designed By JJR CREATIVES.</span></p> 
+             <p><span>Designed By <span>JJR</span> CREATIVES.</span></p> 
        </div>
       </div>
   );

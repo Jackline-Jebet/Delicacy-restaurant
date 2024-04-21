@@ -6,10 +6,13 @@
 }
 
 .menu-item img {
-  width: 100%;
-  max-width: 260px;
+  width: 270px;
+  /* max-width: 300px; */
+  height: 270px;
+  /* max-height: 300px; */
   border-radius: 8px;
   margin-right: 20px;
+  object-fit: cover;
 }
 
 .menu-item p {
@@ -47,7 +50,7 @@
 }
 
 .menu-item .label1 {
-  color: rgb(9, 182, 101);
+  color:  rgb(10, 231, 158);
   /* color: rgb(17, 235, 162); */
   margin-top: -12px;
 }

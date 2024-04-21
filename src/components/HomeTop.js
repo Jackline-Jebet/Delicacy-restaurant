@@ -42,7 +42,7 @@ function HomeTop() {
       <div className='container'>
       <img className='img' src={containerImage} alt='Delicious Food' />
       <h3> Hello, Welcome. Are You Ready For Our Delicious Taste?</h3>
-      <h1>DELICACY RESTAURANT</h1>
+      <h1><span>D</span>ELICACY <span>R</span>ESTAURANT</h1>
       <Link to="/#">
           <button className='btnHome1'>Welcome Aboard</button>
           <button className='btnHome2'>Discover Menu</button>

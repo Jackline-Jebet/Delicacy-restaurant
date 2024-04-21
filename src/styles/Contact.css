@@ -10,7 +10,7 @@
   flex: 1;
   min-width: 300px;
   /* display: flex; */
-  margin-top: 175px;
+  margin-top: -80px;
 }
 
 .contact-info {
@@ -161,6 +161,10 @@ color: rgba(19, 7, 1, 0.466);
 margin-bottom: -16px;
 }
 
+.contact .container span {
+  color: aqua;
+}
+
 .featured-title {
   /* position: relative; */
   display: flex;
@@ -169,6 +173,7 @@ margin-bottom: -16px;
 .featured-title p {
   font-size: 32px;
   color: aqua;
+  /* color: orangered; */
 }
 
 .featured-title::before,
@@ -176,10 +181,11 @@ margin-bottom: -16px;
   display: table-cell;
   content: "";
   width: 80px;
-  height: 0;
+  height: 3px;
   border-top: 1px solid #fff;
-  margin-top: 53px;
-  border-color: aqua;
+  border-bottom: 3px solid orangered;
+  margin-top: 49px;
+  /* border-color: aqua; */
 }
 
 

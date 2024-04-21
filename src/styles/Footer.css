@@ -81,7 +81,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 1px solid #f75023;
+  border: 1px solid rgb(17, 235, 206);
   width: 40px;
   height: 40px;
   z-index: -1;
@@ -93,7 +93,7 @@
 
 .right-footer .txt {
   font-size: 14px;
-  color: orangered;
+  color: rgb(0, 255, 200);
 }
 
 .copyright-txt {
@@ -111,6 +111,10 @@ margin-bottom: -10px;
 
 .copyright-txt span {
   color: #fff;
+}
+
+.copyright-txt span span {
+  color: rgb(31, 226, 240);
 }
 
 .main {
@@ -160,6 +164,10 @@ margin-bottom: -10px;
   margin-left: 15px;
 }
 
+.left-contact p span {
+  color: rgb(40, 231, 190);
+}
+
 .left-contact .para1 {
   color: rgb(190, 185, 185);
   line-height: 1.3;
@@ -198,6 +206,7 @@ margin-bottom: -10px;
 
 .nav-links a:hover {
   color: #f75023;
+  color: rgb(0, 255, 191);
 }
 
 .service li {
