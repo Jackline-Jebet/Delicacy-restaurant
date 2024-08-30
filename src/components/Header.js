@@ -21,6 +21,13 @@ function Header() {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
      useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -32,7 +39,11 @@ function Header() {
   return (
      <div className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className='leftSide'>
-        <img src={Logo} alt='logo' />
+       
+        {/* <Link to="/"> */}
+        <img src={Logo} alt='logo' onClick={scrollToTop} style={{ cursor: 'pointer' }} />
+        {/* </Link> */}
+
         </div>
         <div className=' id={openLinks ? "open" : "close"}'>
       <header>
